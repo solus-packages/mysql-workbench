@@ -1,0 +1,41 @@
+name       : mysql-workbench
+version    : 6.3.10
+release    : 1
+source     :
+    - https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-6.3.10-src.tar.gz : b5593e439c6f8d50262a8950456a9ba3709b02d1dece0360d5f6e47e1b0d7dc3
+    - http://www.antlr3.org/download/antlr-3.4-complete.jar : 9d3e866b610460664522520f73b81777b5626fb0a282a5952b9800b751550bf7
+license    : GPL-2.0
+component  : database
+description: Graphical tool for working with MySQL servers
+summary    : |
+    MySQL Workbench is a graphical tool for working with MySQL servers and databases. MySQL Workbench fully supports MySQL server versions 5.5 and higher.
+builddeps  :
+    - pkgconfig(gdal)
+    - pkgconfig(gnome-keyring-1)
+    - pkgconfig(gtk+-3.0)
+    - pkgconfig(gtkmm-3.0)
+    - pkgconfig(libzip)
+    - pkgconfig(mariadb)
+    - bzip2-devel
+    - libboost-devel
+    - libvsqlite++-devel
+    - mysql-connector-cpp-devel
+    - openjdk-8
+    - python-paramiko
+    - swig
+    - unixodbc-devel
+
+rundeps    :
+    - mysql-connector-cpp
+    - proj.4
+    - python-paramiko
+
+setup      : |
+    %apply_patches
+    export ANTLR_JAR_PATH="$sources/antlr-3.4-complete.jar"
+    %cmake -DUSE_GNOME_KEYRING=ON -DLIB_INSTALL_DIR=/usr/lib64 -DMySQL_CONFIG_PATH=/usr/bin/mysql_config
+
+build      : |
+    %make
+install    : |
+    %make_install

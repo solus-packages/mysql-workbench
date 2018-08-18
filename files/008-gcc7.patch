@@ -1,0 +1,28 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 4a6fe7d..17d451d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -288,8 +288,8 @@ set(BUILD_SHARED_LIBS ON)  # By default all libs will be built as shared libs
+ 
+ # Add some common compiler flags. TODO: Shouldn't this be done checking if whatever compiler
+ # we use supports each flag to allow for non-gcc compilers in Linux (as above)?
+-set(WB_CXXFLAGS -Werror -Wall -Wextra -Wno-unused-parameter -Wno-deprecated -std=c++11)
+-set(WB_CFLAGS -Werror -Wall -Wextra -Wno-unused-parameter -Wno-deprecated)
++set(WB_CXXFLAGS -Wall -Wextra -Wno-unused-parameter -Wno-deprecated -std=c++11)
++set(WB_CFLAGS -Wall -Wextra -Wno-unused-parameter -Wno-deprecated)
+ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+   if(CMAKE_CXX_COMPILER_VERSION VERSION_LESS "4.7")
+     message(FATAL_ERROR "Insufficient gcc version. You need gcc v4.7 or newer to build this project")
+diff --git a/ext/scintilla/gtk/CMakeLists.txt b/ext/scintilla/gtk/CMakeLists.txt
+index f29fdb9..38dcb4b 100644
+--- a/ext/scintilla/gtk/CMakeLists.txt
++++ b/ext/scintilla/gtk/CMakeLists.txt
+@@ -157,7 +157,7 @@ add_library(wbscintilla
+ 
+ set(NEW_WB_CFLAGS ${WB_CFLAGS})
+ list(REMOVE_ITEM NEW_WB_CFLAGS -Werror)
+-list(APPEND NEW_WB_CFLAGS -DGTK -DSCI_LEXER -DSCI_NAMESPACE -Wno-deprecated-register)
++list(APPEND NEW_WB_CFLAGS -DGTK -DSCI_LEXER -DSCI_NAMESPACE )
+ if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+   list(APPEND NEW_WB_CFLAGS -DNO_CXX11_REGEX)
+ endif()

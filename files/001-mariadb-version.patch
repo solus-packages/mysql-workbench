@@ -1,0 +1,14 @@
+diff --git a/build/cmake/Modules/FindMySQL.cmake b/build/cmake/Modules/FindMySQL.cmake
+index 960656a..1160b42 100644
+--- a/build/cmake/Modules/FindMySQL.cmake
++++ b/build/cmake/Modules/FindMySQL.cmake
+@@ -73,8 +73,7 @@ else ()
+ 
+         find_file(MySQL_VERSION_FILE mysql_version.h ${MySQL_INCLUDE_DIRS})
+         file(STRINGS "${MySQL_VERSION_FILE}" MySQL_VERSION_LINE REGEX "MYSQL_SERVER_VERSION")
+-        string(REGEX REPLACE "#define MYSQL_SERVER_VERSION[ \t]+\"([0-9.]+)\"" "\\1" MySQL_VERSION "${MySQL_VERSION_LINE}")
+-        
++        set(MySQL_VERSION "5.7.19") 
+         # Find the library:
+         set(MySQL_LIBRARY_NAMES mysqlclient mysqlclient_r)
+         find_library(MySQL_LIBRARIES

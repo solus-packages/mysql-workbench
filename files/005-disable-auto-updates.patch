@@ -1,0 +1,23 @@
+diff --git a/res/wbdata/main_menu.xml b/res/wbdata/main_menu.xml
+index 0af9d70..ab5cd6e 100644
+--- a/res/wbdata/main_menu.xml
++++ b/res/wbdata/main_menu.xml
+@@ -2618,7 +2618,7 @@
+           <value type="string" key="command">builtin:show_log_file</value>
+           <value type="string" key="itemType">action</value>
+         </value>
+-
++	<!-- Commented to avoid auto-updates
+         <value type="object" struct-name="app.MenuItem" id="com.mysql.wb.menu.separator.help.checkver">
+           <value type="string" key="itemType">separator</value>
+         </value>
+@@ -2629,7 +2629,8 @@
+           <value type="string" key="name">checkUpdate</value>
+           <value type="string" key="command">plugin:wb.tools.checkForUpdates</value>
+           <value type="string" key="itemType">action</value>
+-        </value>
++	</value> //-->
++	
+ 
+         <value type="object" struct-name="app.MenuItem" id="com.mysql.wb.menu.separator.help.report_a_bug">
+           <value type="string" key="itemType">separator</value>

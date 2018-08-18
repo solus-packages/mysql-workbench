@@ -1,0 +1,15 @@
+diff --git a/backend/wbprivate/workbench/wb_context.cpp b/backend/wbprivate/workbench/wb_context.cpp
+index 82c0fa6..404d9bd 100644
+--- a/backend/wbprivate/workbench/wb_context.cpp
++++ b/backend/wbprivate/workbench/wb_context.cpp
+@@ -1009,10 +1009,6 @@ void WBContext::init_finish_(WBOptions *options) {
+ 
+   _frontendCallbacks->show_status_text(_("Ready."));
+ 
+-  if (options->open_at_startup_type !=
+-      "run-script") // <--- so that our runtime tests don't lock up when a modal warning dialog is displayed
+-    warnIfRunningOnUnsupportedOS();
+-
+   try {
+     // execute action requested from command line
+     if (options->open_at_startup_type == "query" || options->open_at_startup_type == "admin") {

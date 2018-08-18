@@ -1,0 +1,53 @@
+diff --git a/backend/wbpublic/grt/spatial_handler.h b/backend/wbpublic/grt/spatial_handler.h
+index 61155bc..b80c09d 100644
+--- a/backend/wbpublic/grt/spatial_handler.h
++++ b/backend/wbpublic/grt/spatial_handler.h
+@@ -20,12 +20,12 @@
+ #ifndef SPATIAL_HANDLER_H_
+ #define SPATIAL_HANDLER_H_
+ 
+-#include <gdal/ogrsf_frmts.h>
+-#include <gdal/ogr_api.h>
+-#include <gdal/gdal_pam.h>
+-#include <gdal/memdataset.h>
+-#include <gdal/gdal_alg.h>
+-#include <gdal/gdal.h>
++#include <ogrsf_frmts.h>
++#include <ogr_api.h>
++#include <gdal_pam.h>
++#include <memdataset.h>
++#include <gdal_alg.h>
++#include <gdal.h>
+ #include <deque>
+ #include "base/geometry.h"
+ #include "wbpublic_public_interface.h"
+diff --git a/backend/wbpublic/grtui/geom_draw_box.h b/backend/wbpublic/grtui/geom_draw_box.h
+index a0e963e..f8c6de4 100644
+--- a/backend/wbpublic/grtui/geom_draw_box.h
++++ b/backend/wbpublic/grtui/geom_draw_box.h
+@@ -21,7 +21,7 @@
+ #define _GEOM_DRAW_BOX_H_
+ 
+ #include <mforms/drawbox.h>
+-#include <gdal/ogr_geometry.h>
++#include <ogr_geometry.h>
+ #include "wbpublic_public_interface.h"
+ 
+ class WBPUBLICBACKEND_PUBLIC_FUNC GeomDrawBox : public mforms::DrawBox {
+diff --git a/backend/wbpublic/objimpl/db.query/db_query_Resultset.cpp b/backend/wbpublic/objimpl/db.query/db_query_Resultset.cpp
+index d2eb849..77121d6 100644
+--- a/backend/wbpublic/objimpl/db.query/db_query_Resultset.cpp
++++ b/backend/wbpublic/objimpl/db.query/db_query_Resultset.cpp
+@@ -17,9 +17,9 @@
+  * 02110-1301  USA
+  */
+ 
+-#include <gdal/ogrsf_frmts.h>
+-#include <gdal/ogr_api.h>
+-#include <gdal/gdal.h>
++#include <ogrsf_frmts.h>
++#include <ogr_api.h>
++#include <gdal.h>
+ 
+ #include <grts/structs.db.query.h>
+ #include <grtpp_util.h>

@@ -1,0 +1,17 @@
+diff --git a/modules/db.mysql.sqlparser/CMakeLists.txt b/modules/db.mysql.sqlparser/CMakeLists.txt
+index 692c548..a3728ba 100644
+--- a/modules/db.mysql.sqlparser/CMakeLists.txt
++++ b/modules/db.mysql.sqlparser/CMakeLists.txt
+@@ -56,10 +56,10 @@ target_compile_options(db.mysql.sqlparser.grt PUBLIC ${WB_CXXFLAGS})
+ add_dependencies(db.mysql.sqlparser.grt parsers sqlparser)
+ 
+ 
+-target_link_libraries(db.mysql.sqlparser.grt sqlparser ${GRT_LIBRARIES} ${GTK3_LIBRARIES} ${SIGC++_LIBRARIES} ${PCRE_LIBRARIES})
++target_link_libraries(db.mysql.sqlparser.grt sqlparser sqlparser ${GRT_LIBRARIES} ${GTK3_LIBRARIES} ${SIGC++_LIBRARIES} ${PCRE_LIBRARIES})
+ 
+ if(BUILD_FOR_TESTS)
+-  target_link_libraries(db.mysql.sqlparser.grt gcov)
++  target_link_libraries(db.mysql.sqlparser.grt sqlparser gcov)
+ endif()
+ 
+ set_source_files_properties(src/mysql_sql_parser_utils.cpp PROPERTIES COMPILE_FLAGS -Wno-varargs)

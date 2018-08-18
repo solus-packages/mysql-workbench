@@ -1,0 +1,8 @@
+001-mariadb-version.patch
+002-mariadb-json.patch
+003-gdal-namespace.patch
+004-os-warning.patch
+005-disable-auto-updates.patch
+006-nonstandard-version.patch
+007-sqlparser.patch
+008-gcc7.patch 

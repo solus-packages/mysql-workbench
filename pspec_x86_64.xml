@@ -1,0 +1,202 @@
+<PISI>
+    <Source>
+        <Name>mysql-workbench</Name>
+        <Packager>
+            <Name>Alfonso Rodríguez</Name>
+            <Email>arc.proxectos@gmail.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>database</PartOf>
+        <Summary xml:lang="en">MySQL Workbench is a graphical tool for working with MySQL servers and databases. MySQL Workbench fully supports MySQL server versions 5.5 and higher.
+</Summary>
+        <Description xml:lang="en">Graphical tool for working with MySQL servers</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>mysql-workbench</Name>
+        <Summary xml:lang="en">MySQL Workbench is a graphical tool for working with MySQL servers and databases. MySQL Workbench fully supports MySQL server versions 5.5 and higher.
+</Summary>
+        <Description xml:lang="en">Graphical tool for working with MySQL servers</Description>
+        <PartOf>database</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libantlr3c_wb.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libcdbc.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libcdbc.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libgrt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libgrt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/liblinux_utilities.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/liblinux_utilities.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmdcanvas.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmdcanvas.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmdcanvasgtk.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmdcanvasgtk.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmforms.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmforms.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmtemplate.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libmtemplate.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libparsers.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libparsers.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libsqlide.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libsqlide.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libsqlparser.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libsqlparser.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbbase.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbbase.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbprivate.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbprivate.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbpublic.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbpublic.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/libwbscintilla.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/DataMigrator.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/SQLEXT.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/_cairo.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/_mforms.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/cairo.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/code_utils_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/datatype_mapping_editor.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.parser.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.parser.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.query.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.query.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.sqlparser.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db.mysql.sqlparser.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_main.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_overview.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_progress.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_report.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_schema_selection.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_copy_source_target.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_generic_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_generic_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_mssql_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_mssql_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_mysql_fe_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_mysql_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_mysql_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_postgresql_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_postgresql_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sql92_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sql92_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sqlanywhere_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sqlanywhere_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sqlite_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sqlite_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sybase_migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/db_sybase_re_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/explain_renderer.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/mforms.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_bulk_copy_data.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_data_transfer.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_main.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_object_editing.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_object_migration.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_object_selection.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_overview.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_project_management.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_schema_creation.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_schema_mappings.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_schema_selection.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_source_selection.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_summary.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_toolbars.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/migration_ui_style.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/optimizer_trace_renderer.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/opts.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/performance_charting.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/run_script.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sql_reformatter.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlanydbwrapper.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_catalogman_ext.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_import_spatial.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_power_export_wizard.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_power_import_export_be.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_power_import_wizard.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_resultset_ext.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_schematree_ext.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/sqlide_tableman_ext.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/table_templates.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/table_utils_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/text_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/text_output.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/utilities.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/utilities.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb.model.grt.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb.model.grt.so.6.3.10</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_config_file_be.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_config_file_ui.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_configuration_startup.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_connections.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_control.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_export.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_export_options.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_logs.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_main.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_monitor.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_performance_dashboard.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_perfschema.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_perfschema_instrumentation.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_perfschema_instrumentation_be.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_perfschema_reports.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_security.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_security_be.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_server_status.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_ssh.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_ui_profile.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_user_privileges.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_utils.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_variable_list.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_admin_variables.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_catalog_utils.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_common.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_dev_utils_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_docs_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_execute_window.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_log_reader.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_model_utils.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_query_analysis_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_server_control.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_server_management.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wb_utils_grt.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wba_monitor_be.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/modules/wba_ssh_ui.py</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/db.mysql.diff.reporting.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/db.mysql.editors.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/db.mysql.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/db.search.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/wb.model.editors.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/wb.model.snippets.wbp.so</Path>
+            <Path fileType="library">/usr/lib64/mysql-workbench/plugins/wb.printing.wbp.so</Path>
+            <Path fileType="data">/usr/share/applications/mysql-workbench.desktop</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/mysql-workbench.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/mimetypes/application-vnd.mysql-workbench-model.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/128x128/mimetypes/application-vnd.mysql-workbench-plugin.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/mysql-workbench.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/mimetypes/application-vnd.mysql-workbench-model.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/16x16/mimetypes/application-vnd.mysql-workbench-plugin.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/mysql-workbench.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/mimetypes/application-vnd.mysql-workbench-model.png</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/48x48/mimetypes/application-vnd.mysql-workbench-plugin.png</Path>
+            <Path fileType="data">/usr/share/mime-info/mysql-workbench.mime</Path>
+            <Path fileType="data">/usr/share/mime/packages/mysql-workbench.xml</Path>
+            <Path fileType="data">/usr/share/mysql-workbench</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-06-08</Date>
+            <Version>6.3.10</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Alfonso Rodríguez</Name>
+            <Email>arc.proxectos@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
